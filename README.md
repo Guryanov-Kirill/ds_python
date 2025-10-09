@@ -1,1 +1,1 @@
-# ds_python
+python-version 3.13.7
