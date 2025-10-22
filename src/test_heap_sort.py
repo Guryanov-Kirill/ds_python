@@ -2,13 +2,11 @@ import random
 from heap_sort import heap_sort
 
 
-# unit тест
-def test_sort():
+def unit_test():
     array = [1, 5, 59, 32, -452, 22, 234, 6, 7]
     assert heap_sort(array) == [-452, 1, 5, 6, 7, 22, 32, 59, 234]
 
-# критические случаи
-def test_sort():
+def kritical_test():
     array1 = [1]
     assert heap_sort(array1) == [1]
 
@@ -19,7 +17,7 @@ def test_sort():
     assert heap_sort(array3) == [2, 3, 5, 5, 7, 54, 67, 67]
 
 
-def test_sort():
+def property_based_sort():
     array4 = [random.randint(-100, 0) for i in range(10)]
     assert heap_sort(array4) == sorted(array4)
 
