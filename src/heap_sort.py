@@ -10,7 +10,7 @@ def heapify(array, i, n):
         return
     else:
         array[i], array[largest] = array[largest], array[i]
-        test(array, largest, n)
+        heapify(array, largest, n)
 
 def heap_sort(array):
     lenght = len(array)
@@ -20,6 +20,8 @@ def heap_sort(array):
         array[0], array[j] = array[j], array[0]
         heapify(array, 0, j)
     return array
+
+
 
 
 
